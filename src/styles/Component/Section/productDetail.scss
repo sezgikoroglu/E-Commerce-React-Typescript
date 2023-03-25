@@ -1,0 +1,101 @@
+
+   
+    .details-container{
+        margin:45px auto;
+        height: 450px;
+        width: 80%;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        display: flex;
+        border-radius: 6px;
+        .images-container{
+            width: 50%;
+            height: 100%;
+            margin: 10px;
+        
+
+            .img-container{
+                height: 75%;
+                border: solid 1px #e6e6e6;
+                background-color: #fff;
+                box-shadow: 0 1px 4px #0000000d;
+                border-radius: 6px;
+                .prev {
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+                    transform: translateY(-60%);
+                    cursor: pointer;
+                }
+                .next {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                }
+                .img-detail{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .small-img-container{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 15px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                &:hover{
+                    border: 2px solid #f27a1a;
+                }
+                }
+            }
+        }
+        .content-container{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            justify-content: center;
+            gap: 15px;
+            .desc-item-02{
+                font-weight:500;
+            }
+            .desc-item-01{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .desc-item-03{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                button{
+                    height: 50px;
+                    border: 1px solid #f27a1a;
+                    border-radius: 6px;
+                    background: #f27a1a;
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all ease 0.5s;
+                &:hover{
+                    color: white;
+                }
+                &:disabled{
+                   
+                    color: black;
+                    opacity: 0.6;
+                }
+                }
+            }
+         
+
+
+        }
+    }
+

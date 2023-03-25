@@ -1,0 +1,81 @@
+.basket-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    .basket-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+        }
+        .div-amount{
+            display: flex;
+            width: 90px;
+            height: 34px;
+            font-size: 12px;
+            border: 1px solid #e6e6e6;
+            border-radius: 3px;
+            overflow: hidden;
+            .counter{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(242, 122, 26);
+                width: 24px;
+                height: 34px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #fafafa;
+                transition: all ease 0.5s;
+            &:disabled{
+                color: lightgray
+            }
+            &:disabled:hover{
+                background-color: #fafafa;
+            }
+            &:hover{
+                background-color: rgb(231, 224, 224);
+            }
+            }
+            .amount{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 42px;
+                height: 34px;
+                font-size: 15px;
+                font-weight: 400;
+            
+            }
+            .right{
+                border-right: 1px solid #e6e6e6;
+            }
+            .left{
+                border-left: 1px solid #e6e6e6;
+            }
+        }
+        .price{
+            font-size: 16px;
+            line-height:  16px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            color: #f27a1a;
+        }
+        .delete{
+            width: 20px;
+            cursor: pointer;
+            transition: all ease 0.5s;
+        &:hover{
+            color: #f27a1a;
+        }
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+}
