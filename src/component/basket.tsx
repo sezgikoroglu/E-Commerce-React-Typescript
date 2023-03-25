@@ -59,7 +59,13 @@ export const Basket = () => {
                 </IconButton>
               </Tooltip>
             </li>
-            <div className="total">
+            
+          </>
+        ))}
+        
+      </ul>
+      {basket.length == 0 && <p>Sepetinizde ürün bulunmamaktadır.</p>}
+      <div className="total">
               Toplam :{" "}
               {basket
                 .reduce((toplam, product) => {
@@ -67,11 +73,7 @@ export const Basket = () => {
                 }, 0)
                 .toLocaleString("tr-TR")}{" "}
               $
-            </div>
-          </>
-        ))}
-        {basket.length == 0 && <p>Sepetinizde ürün bulunmamaktadır.</p>}
-      </ul>
+      </div>
     </>
   );
 };
