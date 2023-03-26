@@ -1,5 +1,11 @@
 # E-Commerce-React-Typescript
 
+-JavaScript
+-React
+-Redux
+-Material UI
+-SCSS
+
 ![image](https://user-images.githubusercontent.com/107544695/227739812-8d813015-c1f0-445b-be61-c73dac8e1cba.png)
 
 ![image](https://user-images.githubusercontent.com/107544695/227739871-52949e28-33af-493a-a1d8-1322cbbc49a8.png)
