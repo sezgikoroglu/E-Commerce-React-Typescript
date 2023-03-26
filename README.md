@@ -1,7 +1,8 @@
 # E-Commerce-React-Typescript
 
--JavaScript
+JavaScript
 -React
+-Typescript
 -Redux
 -Material UI
 -SCSS
